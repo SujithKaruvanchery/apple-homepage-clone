@@ -16,6 +16,13 @@ body {
     font-size: 15px;
 }
 
+.iphone-section img {
+    display: block;
+    width: 100%;
+    height: 692px;
+    object-fit: cover;
+}
+
 .iphone-section h1 {
     text-align: center;
     font-size: 360%;
@@ -107,6 +114,47 @@ body {
     display: block;
 }
 
-.footer-container{
+.footer-container {
     display: flex;
+}
+
+.footer-container div a {
+    text-decoration: none;
+    color: black;
+    padding: 1px;
+}
+
+.iphone-section {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.iphone-section-div {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.macbook-section {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.macbook-section-div {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.macbook-section img {
+    display: block;
+    width: 100%;
+    height: 692px;
+    object-fit: cover;
 }
