@@ -124,7 +124,7 @@ body {
 
 .iphone-section-div {
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -138,8 +138,8 @@ body {
 
 .macbook-section-div {
     position: absolute;
-    top: 70px;
-    left: 190px;
+    top: 50px;
+    left: 50%;
     transform: translateX(-50%);
     text-align: center;
     width: 100%;
