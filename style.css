@@ -405,3 +405,15 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
 }
+
+.airpods-one,
+.airpods-two,
+.watchseries-one,
+.watchseries-two,
+.macbookpro-one,
+.macbookpro-two,
+.tradin-one,
+.macstudent-one {
+    padding: 18px 40px;
+    font-size: 16px;
+}
