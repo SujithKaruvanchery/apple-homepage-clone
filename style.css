@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Outfit", sans-serif;
 }
@@ -14,6 +20,10 @@ body {
     padding-top: 5px;
     text-align: center;
     font-size: 15px;
+}
+
+.store-link a {
+    text-decoration: none;
 }
 
 .iphone-section img {
@@ -444,7 +454,7 @@ body {
     font-size: 16px;
 }
 
-.para-section p{
+.para-section p {
     max-width: 980px;
     margin: 0 auto 15px;
     font-size: 12px;
@@ -462,4 +472,102 @@ body {
     margin: 25px auto 0;
     border: none;
     border-top: 1px solid #d2d2d7;
+}
+
+.carousel-section ul {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    display: flex;
+    gap: 4vw;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-section li {
+    list-style-type: none;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+}
+
+.carousel-section li:nth-child(even) {
+    background-color: cyan;
+}
+
+.carousel-section ul::scroll-button(*) {
+    border: 0;
+    font-size: 2rem;
+    background: none;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.carousel-section ul::scroll-button(*):hover,
+ul::scroll-button(*):focus {
+    opacity: 1;
+}
+
+.carousel-section ul::scroll-button(*):active {
+    translate: 1px 1px;
+}
+
+.carousel-section ul::scroll-button(*):disabled {
+    opacity: 0.2;
+    cursor: unset;
+}
+
+.carousel-section ul::scroll-button(left) {
+    content: "◄" / "Previous";
+}
+
+.carousel-section ul::scroll-button(right) {
+    content: "►" / "Next";
+}
+
+.carousel-section ul {
+    anchor-name: --my-carousel;
+}
+
+.carousel-section ul::scroll-button(*) {
+    position: absolute;
+    position-anchor: --my-carousel;
+}
+
+.carousel-section ul::scroll-button(left) {
+    right: calc(anchor(left) - 70px);
+    bottom: calc(anchor(top) + 13px);
+}
+
+.carousel-section ul {
+    scroll-marker-group: after;
+}
+
+.carousel-section ul::scroll-marker-group {
+    position: absolute;
+    position-anchor: --my-carousel;
+    top: calc(anchor(bottom) - 70px);
+    justify-self: anchor-center;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel-section li::scroll-marker {
+    content: attr(data-accName);
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: 16px;
+}
+
+.carousel-section li::scroll-marker:target-current {
+    background-color: black;
 }
