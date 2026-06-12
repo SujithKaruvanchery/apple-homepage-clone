@@ -647,3 +647,67 @@ ul::scroll-button(*):focus {
 .carousel-section ul::-webkit-scrollbar {
     display: none;
 }
+
+.footer-section {
+    background-color: #f5f5f7;
+    padding: 20px 0;
+}
+
+.footer-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px;
+    width: 980px;
+
+}
+
+.footer-container div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container div a {
+    text-decoration: none;
+    color: #6e6e73;
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.footer-container div a:first-child {
+    font-weight: 600;
+    color: #1d1d1f;
+    margin-bottom: 15px;
+}
+
+/*
+
+.footer-section p {
+    max-width: 980px;
+    margin: 30px auto 15px;
+    font-size: 12px;
+    color: #6e6e73;
+}
+
+.footer-section hr {
+    max-width: 980px;
+    margin: 15px auto;
+    border: none;
+    border-top: 1px solid #d2d2d7;
+}
+
+.footer-section ul {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #6e6e73;
+}
+
+.footer-section ul li:last-child {
+    margin-left: auto;
+} */
