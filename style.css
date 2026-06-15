@@ -667,20 +667,19 @@ ul::scroll-button(*):focus {
     flex-direction: column;
 }
 
-.footer-container div a {
+.footer-container div a{
     text-decoration: none;
     color: #6e6e73;
     font-size: 12px;
     margin-bottom: 12px;
 }
 
-.footer-container div a:first-child {
+.footer-container div a:first-child{
     font-weight: 600;
-    color: #1d1d1f;
+    color:#1d1d1f;
     margin-bottom: 15px;
 }
 
-/*
 
 .footer-section p {
     max-width: 980px;
@@ -710,4 +709,13 @@ ul::scroll-button(*):focus {
 
 .footer-section ul li:last-child {
     margin-left: auto;
-} */
+}
+
+.footer-section a{
+    color: #0066cc;
+}
+
+.carousel-text span{
+    font-size: 20px;
+    font-weight: lighter;
+}
