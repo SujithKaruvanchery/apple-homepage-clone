@@ -27,7 +27,7 @@
 <body>
     <nav class="navbar">
         <ul>
-            <i class="fa-brands fa-apple"></i>
+            <i class="fa-brands fa-apple" id="apple-icon"></i>
             <li>Store</li>
             <li>Mac</li>
             <li>iPad</li>
@@ -456,6 +456,15 @@
     <script>
         document.getElementById('navToggle').addEventListener('click', function () {
             document.querySelector('.navbar ul').classList.toggle('open');
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll('.footer-container div').forEach(div => {
+            div.querySelector('a').addEventListener('click', function (e) {
+                e.preventDefault();
+                div.classList.toggle('open');
+            });
         });
     </script>
 </body>
