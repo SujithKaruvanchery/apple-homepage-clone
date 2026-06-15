@@ -18,7 +18,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"
         integrity="sha512-nKXmKvJyiGQy343jatQlzDprflyB5c+tKCzGP3Uq67v+lmzfnZUi/ZT+fc6ITZfSC5HhaBKUIvr/nTLCV+7F+Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css" integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css"
+        integrity="sha512-t7Few9xlddEmgd3oKZQahkNI4dS6l80+eGEzFQiqtyVYdvcSG2D3Iub77R20BdotfRPA9caaRkg1tyaJiPmO0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -37,6 +40,7 @@
             <li>Support</li>
             <i class="fa-brands fa-sistrix"></i>
             <i class="bi bi-bag"></i>
+            <button class="nav-toggle" id="navToggle">&#9776;</button>
         </ul>
     </nav>
     <section class="store-link">
@@ -449,6 +453,11 @@
             </div>
         </section>
     </footer>
+    <script>
+        document.getElementById('navToggle').addEventListener('click', function () {
+            document.querySelector('.navbar ul').classList.toggle('open');
+        });
+    </script>
 </body>
 
 </html>

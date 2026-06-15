@@ -667,16 +667,16 @@ ul::scroll-button(*):focus {
     flex-direction: column;
 }
 
-.footer-container div a{
+.footer-container div a {
     text-decoration: none;
     color: #6e6e73;
     font-size: 12px;
     margin-bottom: 12px;
 }
 
-.footer-container div a:first-child{
+.footer-container div a:first-child {
     font-weight: 600;
-    color:#1d1d1f;
+    color: #1d1d1f;
     margin-bottom: 15px;
 }
 
@@ -711,11 +711,64 @@ ul::scroll-button(*):focus {
     margin-left: auto;
 }
 
-.footer-section a{
+.footer-section a {
     color: #0066cc;
 }
 
-.carousel-text span{
+.carousel-text span {
     font-size: 20px;
     font-weight: lighter;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 992px) {
+
+    .iphone-section img,
+    .macbook-section img,
+    .fathersday-section img {
+        height: 500px;
+    }
+
+    .iphone-section h1,
+    .macbook-section h1,
+    .fathersday-section h1 {
+        font-size: 280%;
+    }
+
+    .iphone-link,
+    .macbook-link {
+        font-size: 140%;
+    }
+
+}
+
+@media (max-width: 734px) {   
+  .container {
+    grid-template-columns: 1fr;
+    padding: 1px;
+  }
+
+  .picture {
+    width: 100%;
+    height: 425px;
+  } 
+
+  .container h1 {
+    font-size: 24px;
+  }
+
+  .container p {
+    font-size: 20px;
+  } 
+
+   .airpods-one, .airpods-two,
+  .watchseries-one, .watchseries-two,
+  .macbookpro-one, .macbookpro-two,
+  .tradin-one, .macstudent-one {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
 }
