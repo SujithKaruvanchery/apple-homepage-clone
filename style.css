@@ -114,13 +114,13 @@ body {
     color: black;
 }
 
-.container {
+.container-section {
     display: grid;
     grid-template-columns: auto auto;
     padding: 1px;
 }
 
-.container div {
+.container-section div {
     padding: 5px;
 }
 
@@ -434,12 +434,12 @@ body {
     bottom: 30px;
 }
 
-.container h1 {
+.container-section h1 {
     font-size: 40px;
     margin-bottom: 10px;
 }
 
-.container p {
+.container-section p {
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -743,10 +743,15 @@ ul::scroll-button(*):focus {
         font-size: 140%;
     }
 
+    .picture {
+        width: 100%;
+        height: 425px;
+    }
+
 }
 
 @media (max-width: 734px) {
-    .container {
+    .container-section {
         grid-template-columns: 1fr;
         padding: 1px;
     }
@@ -756,11 +761,11 @@ ul::scroll-button(*):focus {
         height: 425px;
     }
 
-    .container h1 {
+    .container-section h1 {
         font-size: 24px;
     }
 
-    .container p {
+    .container-section p {
         font-size: 20px;
     }
 
@@ -838,20 +843,20 @@ ul::scroll-button(*):focus {
 
 } */
 
-.navbar-brand{
+.navbar-brand {
     display: none;
 }
 
-@media (max-width: 992px){
-    .navbar-brand{
+@media (max-width: 992px) {
+    .navbar-brand {
         display: block;
     }
 
-    .navbarNav{
+    .navbarNav {
         font-size: 0;
     }
 
-    .icon-link{
+    .icon-link {
         display: none !important;
     }
 
@@ -860,7 +865,62 @@ ul::scroll-button(*):focus {
         font-weight: bolder;
     }
 
-    .nav-toggle{
+    .nav-toggle {
         border: none !important;
+    }
+
+    #search-bar {
+        padding-left: 70%;
+    }
+}
+
+@media (max-width: 1240px) {
+    .picture {
+        width: 100%;
+        height: 425px;
+    }
+
+    .footer-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-para {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .footer-terms {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .para-section {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+@media (max-width:425px) {
+    #search-bar {
+        padding-left: 50%;
+    }
+}
+
+@media (max-width:320px) {
+    #search-bar {
+        padding-left: 40%;
+    }
+}
+
+@media (max-width:430px) {
+    #search-bar {
+        padding-left: 40%;
+    }
+}
+
+@media (max-width:540px) {
+    #search-bar {
+        padding-left: 40%;
     }
 }
