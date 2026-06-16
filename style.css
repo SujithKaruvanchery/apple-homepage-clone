@@ -841,3 +841,26 @@ ul::scroll-button(*):focus {
 .navbar-brand{
     display: none;
 }
+
+@media (max-width: 992px){
+    .navbar-brand{
+        display: block;
+    }
+
+    .navbarNav{
+        font-size: 0;
+    }
+
+    .icon-link{
+        display: none !important;
+    }
+
+    .navbar-collapse ul {
+        font-size: medium;
+        font-weight: bolder;
+    }
+
+    .nav-toggle{
+        border: none !important;
+    }
+}
