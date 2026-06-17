@@ -924,3 +924,60 @@ ul::scroll-button(*):focus {
         padding-left: 40%;
     }
 }
+
+.nav-item a{
+    color: black !important;
+}
+
+@media (max-width:435px){
+    .carousel-section li {
+    position: relative;
+}
+
+.carousel-content {
+    position: absolute;
+    display: flex;
+    left: 10%;
+    bottom: 100px;
+    gap: 20px;
+    align-items: center;
+}
+
+.button-section {
+    text-align: center;
+}
+
+.carousel-one {
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 5px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+}
+
+.carousel-one a {
+    text-decoration: none;
+    color: black;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.carousel-text {
+    margin-bottom: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-text span {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+.carousel-text h2 {
+    font-size: 12px;
+}
+
+}
